@@ -1,0 +1,100 @@
+body{
+    background: linear-gradient(135deg,#71b7e6,#c3a5cf,#00ffd5);
+}
+h1 {
+        text-align: center;
+        //porcel em text@ h1 tarber guyner dnel bayc chen haskacel inxhi chi stacvel?
+        // background-image: linear-gradient(to right,#00ffd5, #ffdd00);
+        // background-clip:text;
+        // color: transparent;   
+        &:hover {
+            color: white;
+        }
+    }
+.content {
+    display: flex;
+    justify-content: center;
+    input {
+        background: linear-gradient(35deg, rgb(5, 247, 211), rgb(80, 247, 3), yellow);
+        border-radius: 7px;
+        &:hover {background: linear-gradient(45deg,#00ffd5, #002bff,
+                 #7a00ff, #ff00c8,#00ffd5);
+            color: white;
+        }
+    }
+    
+    button {
+            background: linear-gradient(35deg, rgb(5, 247, 211), rgb(80, 247, 3), yellow);
+            border-radius: 7px;
+            &:hover {background: linear-gradient(45deg,#00ffd5, #002bff,
+                #7a00ff, #ff00c8,#00ffd5);
+            color: white;    
+            }
+        } 
+    }  
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.result {
+    margin-bottom: 60px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px green;
+    overflow: hidden;
+    border: 1px solid purple;
+    
+     img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        
+    }
+    
+    a {
+        color: rgb(0, 11, 11);
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        height: 40px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:linear-gradient(35deg, rgb(5, 247, 211), rgb(80, 247, 3), yellow) ;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+     &:hover {
+            color:white;
+            background: linear-gradient(45deg,#00ffd5, #002bff,
+            #7a00ff, #ff00c8,#00ffd5);
+        }    
+    }
+    
+    &:hover {
+        img {
+            cursor: pointer;
+            transform: scale(1.05);
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+    }
+}
+.showMoreBtn {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+    background: linear-gradient(135deg,#71b7e6,#c3a5cf,#00ffd5);
+    &:hover {background: linear-gradient(45deg,#00ffd5, #002bff,
+        #7a00ff, #ff00c8,#00ffd5);
+        color: white;
+    }    
+}

@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(135deg, #71b7e6, #c3a5cf, #00ffd5);
+}
+h1 {
+  text-align: center;
+}
+h1:hover {
+  color: white;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content input {
+  background: linear-gradient(35deg, #05f7d3, #50f703, yellow);
+  border-radius: 7px;
+}
+.content input:hover {
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8, #00ffd5);
+  color: white;
+}
+.content button {
+  background: linear-gradient(35deg, #05f7d3, #50f703, yellow);
+  border-radius: 7px;
+}
+.content button:hover {
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8, #00ffd5);
+  color: white;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.result {
+  margin-bottom: 60px;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px green;
+  overflow: hidden;
+  border: 1px solid purple;
+}
+.result img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+.result a {
+  color: #000b0b;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(35deg, #05f7d3, #50f703, yellow);
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.result a:hover {
+  color: white;
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8, #00ffd5);
+}
+.result:hover img {
+  cursor: pointer;
+  transform: scale(1.05);
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.showMoreBtn {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #71b7e6, #c3a5cf, #00ffd5);
+}
+.showMoreBtn:hover {
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8, #00ffd5);
+  color: white;
+}
